@@ -2,7 +2,7 @@ repo_name: ramzimalhas/langchain
 report_id: c6d73742a743084676ceab7c641b5974
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-23T06:58:08+00:00'
+timestamp: '2024-02-29T19:33:06+00:00'
 requested_by: hinthornw
 provider: github
 branch: master
@@ -228,6 +228,18 @@ tools:
     detected_date: Nov 28
     severity: high
     first_patched: 3.9.0
+  - name: aiohttp is vulnerable to directory traversal
+    cve_id: CVE-2024-23334
+    cve_url: https://github.com/advisories/GHSA-5h86-8mv2-jq9f
+    detected_date: Jan 30
+    severity: moderate
+    first_patched: 3.9.2
+  - name: AIOHTTP has problems in HTTP parser (the python one, not llhttp)
+    cve_id: CVE-2023-47627
+    cve_url: https://github.com/advisories/GHSA-gfw2-4jvh-wgfg
+    detected_date: Nov 15
+    severity: moderate
+    first_patched: 3.8.6
   - name: aiohttp has vulnerable dependency that is vulnerable to request smuggling
     cve_id: 
     cve_url: https://github.com/advisories/GHSA-pjjw-qhg8-p2p9
@@ -240,12 +252,6 @@ tools:
     detected_date: Nov 28
     severity: moderate
     first_patched: 3.9.0
-  - name: AIOHTTP has problems in HTTP parser (the python one, not llhttp)
-    cve_id: CVE-2023-47627
-    cve_url: https://github.com/advisories/GHSA-gfw2-4jvh-wgfg
-    detected_date: Nov 15
-    severity: moderate
-    first_patched: 3.8.6
   - name: aiohttp.web.Application vulnerable to HTTP request smuggling via llhttp
       HTTP request parser
     cve_id: CVE-2023-37276
@@ -253,6 +259,13 @@ tools:
     detected_date: Jul 21
     severity: moderate
     first_patched: 3.8.5
+  - name: aiohttp's HTTP parser (the python one, not llhttp) still overly lenient
+      about separators
+    cve_id: CVE-2024-23829
+    cve_url: https://github.com/advisories/GHSA-8qpw-xqxj-h4r2
+    detected_date: Jan 30
+    severity: moderate
+    first_patched: 3.9.2
 - name: anthropic
   description: The official Python library for the anthropic API
   package_url: https://pypi.org/project/anthropic
