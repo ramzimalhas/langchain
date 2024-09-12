@@ -1,7 +1,7 @@
 # This is a Dockerfile for running unit tests
 
 # Use the Python base image
-FROM python:3.11.2-bullseye AS builder
+FROM python:3.11.10-bullseye AS builder
 
 # Define the version of Poetry to install (default is 1.4.2)
 ARG POETRY_VERSION=1.4.2
